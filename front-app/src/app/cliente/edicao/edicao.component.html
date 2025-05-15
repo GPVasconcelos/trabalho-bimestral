@@ -1,0 +1,20 @@
+<h1>Edição de Cliente</h1>
+
+<form (ngSubmit)="salvar()">
+    <label>Nome:</label>
+    <input name="nome" type="text" [(ngModel)]="cliente.nome">
+
+    <label>Endereço:</label>
+    <input name="endereco" type="text" [(ngModel)]="cliente.endereco">
+
+    <label>CNPJ:</label>
+    <input name="cnpj" type="text" [(ngModel)]="cliente.cnpj">
+
+    <label>Telefone:</label>
+    <input name="telefone" type="text" [(ngModel)]="cliente.telefone">
+
+    <label>Email:</label>
+    <input name="email" type="email" [(ngModel)]="cliente.email">
+
+    <button type="submit">Atualizar</button>
+</form>

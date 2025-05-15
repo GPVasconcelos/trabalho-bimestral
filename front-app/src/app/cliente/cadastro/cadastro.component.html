@@ -1,0 +1,27 @@
+<p>cadastro cliente</p>
+
+<form (ngSubmit)="salvar()">
+    <div>
+        <label>Nome:</label>
+        <input name="nome" [(ngModel)]="cliente.nome">
+    </div>
+    <div>
+        <label>Telefone:</label>
+        <input name="telefone" [(ngModel)]="cliente.telefone">
+    </div>
+    <div>
+        <label>Endereço:</label>
+        <input name="endereco" [(ngModel)]="cliente.endereco">
+    </div>
+    <div>
+        <label>CNPJ:</label>
+        <input name="cnpj" [(ngModel)]="cliente.cnpj">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input name="email" [(ngModel)]="cliente.email">
+    </div>
+
+    <button type="submit">Salvar</button>
+
+</form>
